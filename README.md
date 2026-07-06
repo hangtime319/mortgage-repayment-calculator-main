@@ -1,16 +1,36 @@
-# React + Vite
+# Mortgage Repayment Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Calculadora de financiamento imobiliário desenvolvida como projeto de estudo prático em React JS e Tailwind CSS, baseada em um desafio de front-end (estilo Frontend Mentor).
 
-Currently, two official plugins are available:
+🔗 **Demo:** https://hangtime319.github.io/mortgage-repayment-calculator-main/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+- Formulário com 4 campos: valor do empréstimo, prazo (anos), taxa de juros (%) e tipo de financiamento (Repayment ou Interest Only)
+- Validação de campos obrigatórios e numéricos, com mensagens de erro exibidas embaixo do campo correspondente
+- Erro de um campo é limpo automaticamente assim que o usuário começa a corrigi-lo, sem precisar reenviar o formulário
+- Cálculo do valor da parcela mensal e do total a ser pago ao longo do prazo, usando a fórmula de amortização (Sistema Price) para "Repayment" e cálculo de juros simples para "Interest Only"
+- Painel de resultados com dois estados: estado vazio (antes do primeiro cálculo) e estado preenchido (após o cálculo)
+- Botão "Clear All" que restaura o formulário e o painel de resultados ao estado inicial
+- Layout responsivo (mobile e desktop)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+- React JS (Hooks: `useState`)
+- Tailwind CSS
+- Vite
+- JavaScript (ES6+)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## O que aprendi neste projeto
+
+- Gerenciamento de estado em React com `useState` e o padrão de "lifting state up" para compartilhar dados entre componentes irmãos
+- Criação de componentes controlados (inputs conectados ao estado)
+- Separação de lógica de negócio (validação e cálculo) em funções puras, isoladas dos componentes visuais
+- Estilização responsiva com Tailwind CSS, incluindo estados de foco, hover e erro
+
+## Como rodar o projeto
+
+```bash
+npm install
+npm run dev
+```
