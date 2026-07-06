@@ -21,12 +21,13 @@ Calculadora de financiamento imobiliário desenvolvida como projeto de estudo pr
 - Vite
 - JavaScript (ES6+)
 
-## O que aprendi neste projeto
+## Destaques técnicos
 
-- Gerenciamento de estado em React com `useState` e o padrão de "lifting state up" para compartilhar dados entre componentes irmãos
-- Criação de componentes controlados (inputs conectados ao estado)
-- Separação de lógica de negócio (validação e cálculo) em funções puras, isoladas dos componentes visuais
-- Estilização responsiva com Tailwind CSS, incluindo estados de foco, hover e erro
+- Implementei validação de formulário em tempo real, com mensagens de erro que desaparecem automaticamente ao corrigir cada campo
+- Construí a lógica de cálculo de financiamento (Sistema Price e juros simples) isolada em funções puras, separadas dos componentes visuais
+- Estruturei o estado da aplicação com `useState`, compartilhando dados entre componentes através de "lifting state up"
+- Desenvolvi componentes controlados e reutilizáveis para os campos do formulário
+- Estilizei a interface com Tailwind CSS, incluindo estados de foco, hover e erro, com layout responsivo para mobile e desktop
 
 ## Como rodar o projeto
 
